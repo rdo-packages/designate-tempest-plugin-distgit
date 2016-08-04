@@ -44,3 +44,4 @@ rm -f *requirements.txt
 %{python2_sitelib}/%{module}-*.egg-info
 
 %changelog
+# REMOVEME: error caused by commit 
