@@ -18,7 +18,7 @@ BuildRequires:  python-pbr
 BuildRequires:  python-setuptools
 BuildRequires:  git
 
-Requires:   openstack-tempest >= 1:11.0.0
+Requires:   python-tempest >= 12.1.0
 Requires:   python-dns >= 1.12.0
 Requires:   python-ddt >= 1.0.1
 
