@@ -18,7 +18,9 @@ BuildRequires:  python-pbr
 BuildRequires:  python-setuptools
 BuildRequires:  git
 
-Requires:   openstack-tempest >= 1:11.0.0
+# Note: While Tempest is an explicit upstream requirement, we choose not to
+# install it because doing so interferes if the consumer runs Tempest from
+# source.
 Requires:   python-dns >= 1.12.0
 Requires:   python-ddt >= 1.0.1
 
