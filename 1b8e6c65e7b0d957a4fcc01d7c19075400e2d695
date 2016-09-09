@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "facab960_d7cd5e5f",
+        "filename": "python-designate-tests-tempest.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 111
+      },
+      "writtenOn": "2016-09-09T09:12:12Z",
+      "side": 1,
+      "message": "Since https://review.rdoproject.org/r/#/c/2136/ is merged, it provides python-tempest, we can add Requires: python-tempest for this and unblock the review.",
+      "revId": "1b8e6c65e7b0d957a4fcc01d7c19075400e2d695",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
