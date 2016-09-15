@@ -1,3 +1,4 @@
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global service designate
 %global plugin designate-tempest-plugin
 %global module designate_tempest_plugin
