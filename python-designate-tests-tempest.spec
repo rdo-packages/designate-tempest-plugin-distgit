@@ -1,3 +1,4 @@
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global service designate
 %global plugin designate-tempest-plugin
 %global module designate_tempest_plugin
@@ -9,7 +10,7 @@ Summary:    Tempest Integration of Designate
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{plugin}/
 
-Source0:    http://tarballs.openstack.org/%{plugin}/%{plugin}-%{version}.tar.gz
+Source0:    http://tarballs.openstack.org/%{plugin}/%{plugin}-%{upstream_version}.tar.gz
 
 BuildArch:  noarch
 
