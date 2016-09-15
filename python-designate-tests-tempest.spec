@@ -9,7 +9,7 @@ Summary:    Tempest Integration of Designate
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{plugin}/
 
-Source0:    http://tarballs.openstack.org/%{plugin}/%{plugin}-%{version}.tar.gz
+Source0:    https://tarballs.openstack.org/%{plugin}/%{plugin}-%{version}.tar.gz
 
 BuildArch:  noarch
 
