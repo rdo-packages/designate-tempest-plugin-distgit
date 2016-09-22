@@ -1,16 +1,21 @@
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
+%global commit 5fde0854fcf6eb2455d4028ade186ade20d6bbf9
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 %global service designate
 %global plugin designate-tempest-plugin
 %global module designate_tempest_plugin
 
 Name:       python-%{service}-tests-tempest
-Version:    XXX
-Release:    XXX
+Version:    0.1.1
+Release:    0.1%{?alphatag}%{?dist}
 Summary:    Tempest Integration of Designate
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{plugin}/
 
-Source0:    http://tarballs.openstack.org/%{plugin}/%{plugin}-%{version}.tar.gz
+Source0:    https://github.com/openstack/%{plugin}/archive/%{commit}.tar.gz#/%{plugin}-%{shortcommit}.tar.gz
 
 BuildArch:  noarch
 
@@ -45,3 +50,5 @@ rm -f *requirements.txt
 %{python2_sitelib}/%{module}-*.egg-info
 
 %changelog
+* Thu Sep 22 2016 Alan Pevec <apevec AT redhat.com> 0.1.1-0.1.5fde085git
+- Update to post 0.1.0 (5fde0854fcf6eb2455d4028ade186ade20d6bbf9)
