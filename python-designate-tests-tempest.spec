@@ -45,3 +45,4 @@ rm -f *requirements.txt
 %{python2_sitelib}/%{module}-*.egg-info
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/designate-tempest-plugin/commit/?id=348f941552655cc8aed556b2c390611ae6e0fde7
