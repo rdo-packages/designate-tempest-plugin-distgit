@@ -4,8 +4,8 @@
 %global module designate_tempest_plugin
 
 Name:       python-%{service}-tests-tempest
-Version:    XXX
-Release:    XXX
+Version:    0.2.0
+Release:    1%{?dist}
 Summary:    Tempest Integration of Designate
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{plugin}/
@@ -45,3 +45,6 @@ rm -f *requirements.txt
 %{python2_sitelib}/%{module}-*.egg-info
 
 %changelog
+* Wed Feb 15 2017 Alfredo Moralejo <amoralej@redhat.com> 0.2.0-1
+- Update to 0.2.0
+
