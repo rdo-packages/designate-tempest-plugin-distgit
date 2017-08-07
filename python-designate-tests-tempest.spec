@@ -47,4 +47,3 @@ rm -f *requirements.txt
 %changelog
 * Wed Feb 15 2017 Alfredo Moralejo <amoralej@redhat.com> 0.2.0-1
 - Update to 0.2.0
-
