@@ -22,6 +22,8 @@ BuildRequires:  git
 Requires:   python-tempest >= 12.1.0
 Requires:   python-dns >= 1.12.0
 Requires:   python-ddt >= 1.0.1
+Requires:   python-testtools
+Requires:   python-dnspython3
 
 %description
 This package contains Tempest tests to cover the designate project.
