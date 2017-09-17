@@ -18,6 +18,7 @@ BuildRequires:  python2-devel
 BuildRequires:  python-pbr
 BuildRequires:  python-setuptools
 BuildRequires:  git
+BuildRequires:  openstack-macros
 
 Requires:   python-tempest >= 12.1.0
 Requires:   python-dns >= 1.12.0
@@ -32,7 +33,7 @@ Additionally it provides a plugin to automatically load these tests into tempest
 %autosetup -n %{plugin}-%{upstream_version} -S git
 
 # Let's handle dependencies ourseleves
-rm -f *requirements.txt
+%py_req_cleanup
 
 %build
 %py2_build
