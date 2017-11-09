@@ -10,7 +10,7 @@
 
 Name:       python-%{service}-tests-tempest
 Version:    0.2.0
-Release:    0.1%{?alphatag}%{?dist}
+Release:    2%{?alphatag}%{?dist}
 Summary:    Tempest Integration of Designate
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{plugin}/
@@ -51,5 +51,8 @@ rm -f *requirements.txt
 %{python2_sitelib}/%{module}-*.egg-info
 
 %changelog
+* Thu Nov 09 2017 Chandan Kumar <chkumar@redhat.com> 0.2.0-2.4c094d17git
+- Bumped release to fix the package upgrade from ocata to pike
+
 * Wed Aug 30 2017 Chandan Kumar <chkumar@redhat.com> 0.2.0-0.1.4c094d17git
 - Update to 0.2.0 (4c094d17769a1fc1fef78c4c8d7626a4a11205e2)
