@@ -9,8 +9,8 @@
 %global module designate_tempest_plugin
 
 Name:       python-%{service}-tests-tempest
-Version:    0.2.0
-Release:    3%{?alphatag}%{?dist}
+Version:    0.3.0
+Release:    1%{?alphatag}%{?dist}
 Summary:    Tempest Integration of Designate
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{plugin}/
@@ -51,6 +51,9 @@ rm -f *requirements.txt
 %{python2_sitelib}/%{module}-*.egg-info
 
 %changelog
+* Mon Nov 13 2017 RDO <dev@lists.rdoproject.org> 0.3.0-1.4c094d1git
+- Update to 0.3.0
+
 * Thu Nov 09 2017 Chandan Kumar <chkumar@redhat.com> 0.2.0-3.4c094d17git
 - Bumped release to fix the package upgrade from ocata to pike
 
