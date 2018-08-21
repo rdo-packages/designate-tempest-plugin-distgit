@@ -35,8 +35,8 @@ BuildRequires:  python2-devel
 BuildRequires:  python2-pbr
 BuildRequires:  python2-setuptools
 
-Requires:   python2-tempest >= 1:17.1.0
-Requires:   python2-dns >= 1.12.0
+Requires:   python2-tempest >= 1:18.0.0
+Requires:   python2-dns >= 1.15.0
 Requires:   python2-ddt >= 1.0.1
 Requires:   python2-testtools >= 1.8.0
 
@@ -52,8 +52,8 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-pbr
 BuildRequires:  python3-setuptools
 
-Requires:   python3-tempest >= 1:17.1.0
-Requires:   python3-dns >= 1.12.0
+Requires:   python3-tempest >= 1:18.0.0
+Requires:   python3-dns >= 1.15.0
 Requires:   python3-ddt >= 1.0.1
 Requires:   python3-testtools >= 1.8.0
 
