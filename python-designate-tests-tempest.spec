@@ -12,8 +12,8 @@ This package contains Tempest tests to cover the designate project.\
 Additionally it provides a plugin to automatically load these tests into tempest.
 
 Name:       python-%{service}-tests-tempest
-Version:    XXX
-Release:    XXX
+Version:    0.5.0
+Release:    1%{?dist}
 Summary:    Tempest Integration of Designate
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{plugin}/
@@ -94,3 +94,5 @@ Requires:   python3-testtools >= 1.8.0
 %endif
 
 %changelog
+* Wed Aug 22 2018 Chandan Kumar <chkumar@redhat.com> 0.5.0-1
+- Update to 0.5.0
