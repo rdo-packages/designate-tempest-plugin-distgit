@@ -46,6 +46,7 @@ Requires:   python%{pyver}-tempest >= 1:18.0.0
 Requires:   python%{pyver}-dns >= 1.15.0
 Requires:   python%{pyver}-ddt >= 1.0.1
 Requires:   python%{pyver}-testtools >= 1.8.0
+Requires:   python-dnspython3 >= 1.12.0
 
 %description -n python%{pyver}-%{service}-tests-tempest
 %{common_desc}
