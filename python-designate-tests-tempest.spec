@@ -8,8 +8,8 @@ This package contains Tempest tests to cover the designate project.\
 Additionally it provides a plugin to automatically load these tests into tempest.
 
 Name:       python-%{service}-tests-tempest
-Version:    XXX
-Release:    XXX
+Version:    0.8.0
+Release:    1%{?dist}
 Summary:    Tempest Integration of Designate
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{plugin}/
@@ -57,3 +57,6 @@ Requires:   python3-testtools >= 2.2.0
 %{python3_sitelib}/%{module}-*.egg-info
 
 %changelog
+* Thu Apr 30 2020 RDO <dev@lists.rdoproject.org> 0.8.0-1
+- Update to 0.8.0
+
