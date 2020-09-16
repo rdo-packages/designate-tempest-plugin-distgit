@@ -32,7 +32,7 @@ BuildRequires:  python3-pbr
 BuildRequires:  python3-setuptools
 
 Requires:   python3-tempest >= 1:18.0.0
-Requires:   python3-dns >= 1.15.0
+Requires:   python3-dns >= 1.16.0
 Requires:   python3-ddt >= 1.0.1
 Requires:   python3-testtools >= 2.2.0
 
