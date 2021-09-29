@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x2426b928085a020d8a90d0d879ab7008d0896c8a
+%global sources_gpg_sign 0x4c29ff0e437f3351fd82bdf47c5a3bc787dc7035
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global service designate
 %global plugin designate-tempest-plugin
@@ -10,8 +10,8 @@ This package contains Tempest tests to cover the designate project.\
 Additionally it provides a plugin to automatically load these tests into tempest.
 
 Name:       python-%{service}-tests-tempest
-Version:    XXX
-Release:    XXX
+Version:    0.12.0
+Release:    1%{?dist}
 Summary:    Tempest Integration of Designate
 License:    ASL 2.0
 URL:        https://github.com/openstack/%{plugin}/
@@ -73,3 +73,6 @@ Requires:   python3-testtools >= 2.2.0
 %{python3_sitelib}/%{module}-*.egg-info
 
 %changelog
+* Wed Sep 29 2021 RDO <dev@lists.rdoproject.org> 0.12.0-1
+- Update to 0.12.0
+
