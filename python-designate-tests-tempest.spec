@@ -73,3 +73,4 @@ Requires:   python3-testtools >= 2.2.0
 %{python3_sitelib}/%{module}-*.egg-info
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/openstack/designate-tempest-plugin/commit/c55bffd3fd79f153754cb1c632eabd66167a273f
