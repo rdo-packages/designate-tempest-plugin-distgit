@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "80aa27ab_f4df5a93",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 141
+      },
+      "writtenOn": "2022-06-13T12:12:18Z",
+      "side": 1,
+      "message": "The error seems to be\n\n2022-06-13 09:33:59.547551 | rdo-centos-stream | + /usr/lib/rpm/redhat/gpgverify --keyring\u003d/home/zuul/rpmbuild/SOURCES/0xa63ea142678138d1bb15f2e303bdfd64dd164087.txt --signature\u003d/home/zuul/rpmbuild/SOURCES/designate-tempest-plugin-0.13.0.tar.gz.asc --data\u003d/home/zuul/rpmbuild/SOURCES/designate-tempest-plugin-0.13.0.tar.gz\n2022-06-13 09:33:59.570802 | rdo-centos-stream | gpgv: Signature made Tue 15 Mar 2022 03:10:37 PM UTC\n2022-06-13 09:33:59.570863 | rdo-centos-stream | gpgv:                using EDDSA key 1974E534480C12124CDC2BB363643A8728715809\n2022-06-13 09:33:59.570886 | rdo-centos-stream | gpgv: Can\u0027t check signature: No public key\n2022-06-13 09:33:59.571216 | rdo-centos-stream | gpgverify: Signature verification failed.\n2022-06-13 09:33:59.824372 | rdo-centos-stream | ERROR\n\nBut it doesn\u0027t seem related to this specific change, or is it?",
+      "revId": "e3d729db6697b598e299dae13ca4756a654f2dea",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
