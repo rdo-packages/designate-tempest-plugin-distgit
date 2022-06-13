@@ -33,6 +33,24 @@
       "message": "Is the key validation error a known issue?",
       "revId": "e3d729db6697b598e299dae13ca4756a654f2dea",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "26a0d03b_781d13cb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 635
+      },
+      "writtenOn": "2022-06-13T13:31:50Z",
+      "side": 1,
+      "message": "The tarball was built and signed with Yoga pubkey, but our bot automatically\nreplaces sources_gpg_sign variable with current master pubkey when submitting patch. I put Yoga pubkey in PS2 to fix issue",
+      "parentUuid": "95833e07_de2f2cf4",
+      "revId": "e3d729db6697b598e299dae13ca4756a654f2dea",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
