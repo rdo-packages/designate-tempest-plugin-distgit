@@ -13,7 +13,7 @@ Name:       python-%{service}-tests-tempest
 Version:    XXX
 Release:    XXX
 Summary:    Tempest Integration of Designate
-License:    ASL 2.0
+License:    Apache-2.0
 URL:        https://github.com/openstack/%{plugin}/
 
 Source0:    https://tarballs.openstack.org/%{plugin}/%{plugin}-%{upstream_version}.tar.gz
@@ -37,16 +37,9 @@ BuildRequires:  openstack-macros
 
 %package -n python3-%{service}-tests-tempest
 Summary: %{summary}
-%{?python_provide:%python_provide python3-%{service}-tests-tempest}
 
 BuildRequires:  python3-devel
-BuildRequires:  python3-pbr
-BuildRequires:  python3-setuptools
-
-Requires:   python3-tempest >= 1:18.0.0
-Requires:   python3-dns >= 1.15.0
-Requires:   python3-ddt >= 1.0.1
-Requires:   python3-testtools >= 2.2.0
+BuildRequires:  pyproject-rpm-macros
 
 %description -n python3-%{service}-tests-tempest
 %{common_desc}
@@ -58,18 +51,18 @@ Requires:   python3-testtools >= 2.2.0
 %endif
 %autosetup -n %{plugin}-%{upstream_version} -S git
 
-# Let's handle dependencies ourseleves
-%py_req_cleanup
+%generate_buildrequires
+%pyproject_buildrequires -R
 
 %build
-%{py3_build}
+%pyproject_wheel
 
 %install
-%{py3_install}
+%pyproject_install
 
 %files -n python3-%{service}-tests-tempest
 %license LICENSE
 %{python3_sitelib}/%{module}
-%{python3_sitelib}/%{module}-*.egg-info
+%{python3_sitelib}/%{module}-*.dist-info
 
 %changelog
