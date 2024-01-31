@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0xa7475c5f2122fec3f90343223fe3bf5aad1080e4
+%global sources_gpg_sign 0x2ef3fe0ec2b075ab7458b5f8b702b20b13df2318
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 %global service designate
 %global plugin designate-tempest-plugin
@@ -10,7 +10,7 @@ This package contains Tempest tests to cover the designate project.\
 Additionally it provides a plugin to automatically load these tests into tempest.
 
 Name:       python-%{service}-tests-tempest
-Version:    0.17.0
+Version:    0.20.0
 Release:    1%{?dist}
 Summary:    Tempest Integration of Designate
 License:    ASL 2.0
@@ -73,6 +73,9 @@ Requires:   python3-testtools >= 2.2.0
 %{python3_sitelib}/%{module}-*.egg-info
 
 %changelog
+* Wed Jan 31 2024 RDO <dev@lists.rdoproject.org> 0.20.0-1
+- Update to 0.20.0
+
 * Wed Mar 15 2023 RDO <dev@lists.rdoproject.org> 0.17.0-1
 - Update to 0.17.0
 
