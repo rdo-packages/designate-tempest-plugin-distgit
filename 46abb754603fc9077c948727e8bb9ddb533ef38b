@@ -1,0 +1,9 @@
+Code-Review+2: Joel Capitao <jcapitao@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Code-Review+1: Luigi Toscano <ltoscano@redhat.com>
+Workflow+1: Joel Capitao <jcapitao@redhat.com>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Wed, 31 Jan 2024 09:33:48 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/designate-tempest-plugin-distgit/+/51431
+Project: openstack/designate-tempest-plugin-distgit
+Branch: refs/heads/antelope-rdo
