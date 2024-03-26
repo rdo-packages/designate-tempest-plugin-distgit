@@ -79,3 +79,4 @@ Requires:   python3-testtools >= 2.2.0
 * Wed Mar 15 2023 RDO <dev@lists.rdoproject.org> 0.17.0-1
 - Update to 0.17.0
 
+
