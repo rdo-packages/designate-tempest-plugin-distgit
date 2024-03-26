@@ -69,3 +69,4 @@ BuildRequires:  pyproject-rpm-macros
 * Wed Oct 04 2023 RDO <dev@lists.rdoproject.org> 0.20.0-1
 - Update to 0.20.0
 
+
