@@ -66,3 +66,4 @@ BuildRequires:  pyproject-rpm-macros
 %{python3_sitelib}/%{module}-*.dist-info
 
 %changelog
+
