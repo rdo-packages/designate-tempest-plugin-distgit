@@ -69,3 +69,4 @@ BuildRequires:  pyproject-rpm-macros
 
 %changelog
 
+# REMOVEME: error caused by commit https://opendev.org/openstack/designate-tempest-plugin/commit/af6e558150585608e44151a6f20eea28754b7aa5
